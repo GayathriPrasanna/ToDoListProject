@@ -1,0 +1,170 @@
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: #1ac7d7;
+  line-height: 1.6;
+  color: #333;
+  padding-top: 60px;
+}
+
+
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: #0077b6;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding: 15px 0;
+  z-index: 10;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.navbar a {
+  color: rgb(255, 247, 247);
+  text-decoration: none;
+  font-weight: bold;
+  padding: 8px 15px;
+  font-family: "Georgia";
+  font-size: 23px;
+  transition: background 0.3s ease;
+  border-radius: 5px;
+}
+
+.navbar a:hover {
+  background: rgba(255, 255, 255, 0.2);
+}
+.main {
+    color:#1ac7d7
+}
+section {
+  max-width: 800px;
+  margin: 30px auto;
+  background: #131212;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 4px 12px rgba(225, 134, 134, 0.1);
+}
+p , li {
+    color: #d8dcde;
+}
+
+
+input, textarea, select {
+  width: 100%;
+  margin: 10px 0;
+  padding: 12px;
+  font-family: "Georgia";
+  font-size: 16px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}
+
+textarea {
+  resize: vertical;
+  min-height: 100px;
+}
+
+button {
+  background: #00b894;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  font-size: 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+  font-family: "Copperplate";
+  transition: background 0.3s ease;
+}
+
+button:hover {
+  background: #019875;
+}
+
+#formMsg {
+  color: green;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+
+#taskList li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #f9f9f9;
+  border-left: 5px solid #ccc;
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 8px;
+  transition: 0.3s;
+}
+
+#taskList li:hover {
+  background: #e6f7ff;
+}
+
+.task-status {
+  font-weight: bold;
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-size: 0.9em;
+}
+
+.status-Pending {
+  background: #f5c503;
+  color: #050404;
+}
+
+.status-In Progress {
+  background: #ece515;
+  color: #2981d4;
+}
+
+.status-Completed {
+  background: #8bc34a;
+  color: #1b5e20;
+}
+
+
+@media (max-width: 600px) {
+  .navbar {
+    flex-direction: column;
+  }
+
+  section {
+    margin: 20px;
+    padding: 20px;
+  }
+}
+.footer-bar {
+  width: 100%;
+  background-color: rgb(85, 157, 202);
+  padding: 5px 0;
+  text-align: center;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  z-index: 999;
+  box-shadow: 0 0 15px #0ff;
+}
+
+.footer-bar p {
+  margin: 0;
+  color: #000;
+  font-weight: bold;
+  font-size: 20px;
+}
+.head {
+    margin-right: 800px;
+    margin-top: 7px;
+    font-size: 40px;
+}
